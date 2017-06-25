@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <style>
+        .box{
+            position:relative;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,0);
+            text-align:center;
+        }
+        .box h4{
+            text-align:center;
+            margin-top: 29px;
+            margin-bottom: 34px;
+        }
+        .box .logo{
+            text-align:center;
+        }
+        .footer{
+            text-align: center;
+            padding:20px 0;
+        }
+        div.row:last-child{
+            margin-top:70px;
+        }
+        #top{
+            min-height:56px;
+            width:100%;
+        }
+        #top div.upperw{
+            width:100%;
+            height:30px;
+            background-color:#009B72;
+        }
+        #top div.upper{
+            width:80%;
+            height:30px;
+            background-color:#009B72;
+            margin:0 auto;
+        }
+        #top div.upper ul{
+            overflow:hidden;
+            line-height:30px;
+            float:left;
+            list-style:none;
+        }
+        #top div.upper li{
+            float:left;
+            border-right:1px solid #47B488;
+            margin:0;
+            padding:0 16px;
+        }
+        #top div.upper li:hover{
+            background-color:#47B488;
+        }
+        div.upper li a{
+            color:#FFFFFF;
+            font-size:1.2em;
+            text-align:center;
+            text-decoration:none;
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+</head>
+<body>
+<header id="top">
+    <div class="upperw">
+        <div class="upper">
+            <ul>
+                <li><a href="#">oppo官网</a></li>
+                <li><a href="#">oppo社区</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="container main">
+    <div class="box">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6 col-xs-12 logo"><img src="img/OPPO.png"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6 col-xs-12"><h4>欢迎注册</h4></div>
+        </div>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <div class="col-md-offset-3 col-md-6 col-xs-12">
+                    <input class="form-control" id="uname" placeholder="用户名" type="text"/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-3 col-md-6 col-xs-12">
+                    <input class="form-control" id="upwd" placeholder="密码" type="password"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-7 col-md-2 col-xs-12">
+                    <a href="#">注册遇到问题</a>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-3 col-md-6 col-xs-12">
+                    <input type="button" id="registerBtn" class="btn btn-primary btn-block" value="注册"/>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="container footer">
+    <div class="row">
+        <div class="col-md-12 col-xs-12">
+            <p>其他方式登录</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-offset-4 col-md-4 col-xs-12">
+            <div class="col-md-4 col-xs-4">
+                <img src="img/weixin.png">
+            </div>
+            <div class="col-md-4 col-xs-4">
+                <img src="img/weibo.png">
+            </div>
+            <div class="col-md-4 col-xs-4">
+                <img src="img/zhifubao.png">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-xs-12">
+            © 2005 - 2017 东莞市永盛通信科技有限公司 版权所有 粤ICP备08130115号-1
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!--列表-->
+<div class="container">
+    <!--模拟列表-->
+    <div class="col-sm-9 col-xs-12">
+        <div class="hot">热帖推荐</div>
+        <div class="list-group" ng-repeat="tmp in blogList">
+            <a href="#kflDetail" class="list-group-item">
+               <div class="media row">
+                       <div class="media-left col-xs-2">
+                           <div style="width:90%;margin-top:10%"><img ng-src="img/{{tmp.userPic}}" style="max-width:100%" class="pic"></div>
+                       </div>
+                       <div class="media-body col-xs-10">
+                           <h3>{{tmp.userName}}</h3>
+                           <p>{{tmp.userBlog}}</p>
+                           <span style="width:40%">
+                               <img ng-src="img/{{tmp.blogPic1}}" style="max-width:100%">
+                           </span>
+                            <span style="width:40%">
+                               <img ng-src="img/{{tmp.blogPic2}}" style="max-width:100%">
+                           </span>
+                           <div>{{tmp.publishTime}}</div>
+                       </div>
+               </div>
+            </a>
+        </div>
+        <button class="btn btn-block btn-success" ng-click="loadMore()" ng-show="hasMore">加载更多</button>
+        <div ng-hide="hasMore" class="alert alert-success" role="alert">
+            <a href="#" class="alert-link">没有更多了哦</a>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="list-group  topic">
+            <a href="#" class="list-group-item  hot">热门话题</a>
+            <a href="#" class="list-group-item">#黑白照有格调#</a>
+            <a href="#" class="list-group-item">#旅行的意义#</a>
+            <a href="#" class="list-group-item">#最近吃过的美食#</a>
+            <a href="#" class="list-group-item">查看更多</a>
+        </div>
+        <div class="list-group">
+            <a href="#" class="list-group-item  hot">热门话题</a>
+            <ul class="list-inline list-group-item">
+                <li><a href="#">R9s</a></li>
+                <li><a href="#">R9s</a></li>
+                <li><a href="#">R9s</a></li>
+                <li><a href="#">R9s</a></li>
+                <li><a href="#">R9s</a></li>
+                <li><a href="#">R9s</a></li>
+                <li><a href="#">R9s</a></li>
+                <li><a href="#">R9s</a></li>
+                <li><a href="#">R9s</a></li>
+                <li><a href="#">R9s</a></li>
+                <li><a href="#">R9s</a></li>
+                <li><a href="#">R9s</a></li>
+                <li><a href="#">R9s</a></li>
+                <li><a href="#">R9s</a></li>
+                <li><a href="#">R9s</a></li>
+                <li><a href="#">R9s</a></li>
+            </ul>
+    </div>
+    </div>
+
+</div>
